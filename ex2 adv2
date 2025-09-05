@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int marks[5];
+    int i, total = 0;
+    float average;
+    int failFlag = 0;  // To check if any subject is below 35
+
+    // Reading marks for 5 subjects
+    printf("Enter marks for 5 subjects:\n");
+    for (i = 0; i < 5; i++) {
+        printf("Subject %d: ", i + 1);
+        scanf("%d", &marks[i]);
+        total += marks[i];
+        if (marks[i] < 35) {
+            failFlag = 1;  // Mark as fail if any subject < 35
+        }
+    }
+
+    // Calculate average
+    average = total / 5.0;
+
+    // Display results
+    printf("\nTotal Marks = %d\n", total);
+    printf("Average Marks = %.2f\n", average);
+
+    if (failFlag == 1) {
+        printf("Result: Fail\n");
+        printf("Grade: No Grade\n");
+    } else {
+        printf("Result: Pass\n");
+        if (average >= 80)
+            printf("Grade: O (Distinction)\n");
+        else if (average >= 60)
+            printf("Grade: A\n");
+        else if (average >= 41)
+            printf("Grade: B\n");
+        else if (average >= 35)
+            printf("Grade: C\n");
+    }
+
+    return 0;
+}
