@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	float x,y,z,result;
+	clrscr();
+	printf("Enter x:");
+	scanf("%f",&x);
+	printf("Enyer y:");
+	scanf("%f",&y);
+	printf("enter z:");
+	scanf("%f",&z);
+	result=(x+y)*z/(y-x);
+	printf("result of expression=%f/n",result);
+	getch();
+	return 0;
+	}
+
