@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	int a,b,c,d,e,total;
+	float percentage;
+	printf("Enter the marks for 5 sub:");
+	scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+	total=a+b+c+d+e;
+	percentage=total/50;
+	printf("/n Total marks=%d",total);
+	printf("/nPercentage=%2f",percentage);
+	return 0;
+	}
