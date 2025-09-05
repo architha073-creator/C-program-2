@@ -1,0 +1,15 @@
+#include <stdio.h>
+ #include <conio.h>
+ int main()
+ {
+	int i,n;
+	clrscr();
+	printf("Enter a natursl no.:");
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+	printf("%d\n",i);
+	}
+	getch();
+	return 0;
+ }
