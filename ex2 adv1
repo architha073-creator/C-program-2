@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void generateBill() {
+    static int billCount = 0;  // static variable to retain value
+    billCount++;
+    printf("Electricity Bill Number: %d\n", billCount);
+}
+
+int main() {
+    printf("Simulating Electricity Bill Printing...\n\n");
+
+    // Simulate printing 3 bills
+    generateBill();
+    generateBill();
+    generateBill();
+
+    return 0;
+}
